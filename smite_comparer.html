@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="smite_stats_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Hind+Madurai&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <header>
+                <h1>Smite God Info Chart</h1>
+            </header>
+            <div class="content">
+                <form>
+                    <div class="picker1">
+                        <h3>God Name 1</h3>
+                        <h3> <?php echo "<h3> {$will[0]} </h3>" ?> </h3>
+                        <h4> <?php echo "<h4> {$will[1]} </h4>" ?> </h4>
+                        <input type="search" name='name1' placeholder="Name" list="god_list">
+                        <datalist id="god_list">
+                            <option>Achilles</option> <option>Agni</option> <option>Ah Muzen Cab</option> <option>Ah Puch</option> <option>Amaterasu</option> <option>Anhur</option> <option>Amaterasu</option> <option>Anubis</option> <option>Ao Kuang</option> <option>Aphrodite</option> <option>Apollo</option> <option>Arachne</option> <option>Ares</option> <option>Artemis</option> <option>Artio</option> <option>Athena</option> <option>Awilix</option> <option>Baba Yaga</option> <option>Bacchus</option> <option>Bakasura</option> <option>Baron Samedi</option> <option>Bastet</option> <option>Bellona</option> <option>Cabrakan</option> <option>Camazotz</option> <option>Cerberus</option> <option>Cernunnos</option> <option>Chaac</option> <option>Chang'e</option> <option>Chernobog</option> <option>Chiron</option> <option>Chronos</option> <option>Cu Chulainn</option> <option>Cupid</option> <option>Da Ji</option> <option>Discordia</option> <option>Erlang Shen</option> <option>Fafnir</option> <option>Fenrir</option> <option>Freya</option> <option>Ganesha</option> <option>Geb</option> <option>Guan Yu</option> <option>Hachiman</option> <option>Hades</option> <option>He Bo</option> <option>Heimdallr</option> <option>Hel</option> <option>Hera</option> <option>Hercules</option> <option>Horus</option> <option>Hou Yi</option>
+                        </datalist>
+                    </div>
+
+                    <div class="picker2">
+                        <h3>God Name 2</h3>
+                        <h3> <?php echo "<h3> {$spill[0]} </h3>" ?> </h3>
+                        <h4> <?php echo "<h4> {$spill[1]} </h4>" ?> </h4>
+                        <input type="search" name='name2' placeholder="Name" list="god_list">
+                        <datalist id="god_list">
+                            <option>Achilles</option> <option>Agni</option> <option>Ah Muzen Cab</option> <option>Ah Puch</option> <option>Amaterasu</option> <option>Anhur</option> <option>Amaterasu</option> <option>Anubis</option> <option>Ao Kuang</option> <option>Aphrodite</option> <option>Apollo</option> <option>Arachne</option> <option>Ares</option> <option>Artemis</option> <option>Artio</option> <option>Athena</option> <option>Awilix</option> <option>Baba Yaga</option> <option>Bacchus</option> <option>Bakasura</option> <option>Baron Samedi</option> <option>Bastet</option> <option>Bellona</option> <option>Cabrakan</option> <option>Camazotz</option> <option>Cerberus</option> <option>Cernunnos</option> <option>Chaac</option> <option>Chang'e</option> <option>Chernobog</option> <option>Chiron</option> <option>Chronos</option> <option>Cu Chulainn</option> <option>Cupid</option> <option>Da Ji</option> <option>Discordia</option> <option>Erlang Shen</option> <option>Fafnir</option> <option>Fenrir</option> <option>Freya</option> <option>Ganesha</option> <option>Geb</option> <option>Guan Yu</option> <option>Hachiman</option> <option>Hades</option> <option>He Bo</option> <option>Heimdallr</option> <option>Hel</option> <option>Hera</option> <option>Hercules</option> <option>Horus</option> <option>Hou Yi</option>
+                        </datalist>
+                    </div>
+
+                    <div id="send"> <input type="submit" value="compare"> </div>
+                </form>
+
+                <div class="info">
+                    <div class="health"> <?php echo "<h2> {$will[2]} - {$spill[2]} </h2>" ?> <p>God 1 - God 2</p> <h3>Health</h3>  </div>
+                    <div class="mana"> <?php echo "<h2> {$will[3]} - {$spill[3]} </h2>" ?> <p>God 1 - God 2</p> <h3>Mana</h3> </div>
+                    <div class="basic"> <?php echo "<h2> {$will[4]} - {$spill[4]} </h2>" ?> <p>God 1 - God 2</p> <h3>Basic Attack<br>Damage</h3> </div>
+                    <div class="protect"> <?php echo "<h2> {$will[5]} - {$spill[5]} </h2>" ?> <p>God 1 - God 2</p> <h3>Physical Protection</h3> </div>
+                    <div class="hp5"> <?php echo "<h2> {$will[6]} - {$spill[6]} </h2>" ?> <p>God 1 - God 2</p> <h3>Hp5</h3> </div>
+                    <div class="mp5"> <?php echo "<h2> {$will[7]} - {$spill[7]} </h2>" ?> <p>God 1 - God 2</p> <h3>Mp5</h3> </div>
+                    <div class="attack"> <?php echo "<h2> {$will[8]} - {$spill[8]} </h2>" ?> <p>God 1 - God 2</p> <h3>Attack Speed</h3> </div>
+                    <div class="move"> <?php echo "<h2> {$will[9]} - {$spill[9]} </h2>" ?> <p>God 1 - God 2</p> <h3>Movement Speed</h3> </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+</script>
