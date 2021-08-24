@@ -95,5 +95,3 @@ foreach ($result1 as $g1)
         </div>
     </body>
 </html>
-<script>
-</script>
